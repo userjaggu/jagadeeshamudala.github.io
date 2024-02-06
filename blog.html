@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+</head>
+<body>
+    <h2>The Hitman: A Tale of Rohit Sharma, Captain Marvel of Indian Cricket</h2>
+    <p style="font-size: 20px;">Rohit Sharma, the name evokes awe, fear, and pure cricketing genius. The man with the Midas touch, capable of conjuring magic with the willow, stands tall as the captain of the Indian cricket team across all formats. But his journey, like his batting, has been anything but conventional.
+
+        From the streets of Nagpur to the pinnacle of world cricket, Rohit's story is one of resilience, talent, and an unyielding desire to conquer. He wasn't your quintessential prodigy, but a late bloomer who honed his skills on concrete pitches, his talent nurtured by the legendary Dronacharya awardee, Ramakant Achrekar.
+        
+        His international debut in 2007 was a glimpse of things to come. A century on debut, against South Africa, announced his arrival. But inconsistency plagued him, and whispers of "potential unfulfilled" began to echo. However, Rohit, the fighter, persevered.</p>
+    <div style="font-size: 20px;">
+        <button onclick="toggle_1()"><img id ="like_1" src="https://www.airwatergas.com.au/images/design/like.svg" alt="Like" height="25px" width="25px" style="float:left"></button>
+        <span id="likes_count_1">0</span> Likes
+    </div>
+    <script>
+        var liked_1 = false;
+        var likes_1 = document.getElementById('likes_count_1');
+        var count_likes_1 = parseInt(localStorage.getItem('likes_count_1')) || 0;
+        function toggle_1() {
+            if(liked_1 == false) {
+                var change = document.getElementById('like_1');
+                change.src = 'https://th.bing.com/th/id/R.9cc0657bf1ea80ac864254260832620f?rik=fg33bVOzQrveEQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdi7%2fLqy%2fdi7Lqyn9T.png&ehk=ll6sbNKJn2iNfdpHwudtSUIcdghGGg08nKsmi6ANAKI%3d&risl=&pid=ImgRaw&r=0';
+                change.alt = 'Liked';
+                liked_1 = true; 
+                count_likes_1++;
+            } else {
+                var change = document.getElementById('like_1');
+                change.src = 'https://www.airwatergas.com.au/images/design/like.svg';
+                change.alt = 'Like';
+                liked_1 = false;
+                count_likes_1--;
+            }
+            localStorage.setItem('likes_count_1', count_likes_1.toString());
+            likes_1.textContent = count_likes_1;
+        }
+        likes_1.textContent = count_likes_1;
+    </script>
+    <div class="comments">
+        <p style="font-size: 20px;">Comments:</p>
+        <ul>
+            <li type="square" style="font-size: 20px;">Comment 1</li>
+            <li type="square" style="font-size: 20px;">Comment 2</li>
+        </ul>
+    </div>
+    <h2>The King Kohli: A Reign of Runs and Records</h2>
+    <p style="font-size: 20px;">Virat Kohli. The name itself resonates with power, passion, and an undying spirit on the cricket field. He's not just a batsman; he's an embodiment of modern-day cricketing excellence, a captain who inspires, and a player who leaves audiences spellbound with his audacity and skill.
+
+        Kohli's journey began on the streets of Delhi, where his love for the game blossomed. From gully cricket to domestic matches, his talent shone through, paving the way for his international debut in 2008. What followed was a meteoric rise – centuries galore, records shattered, and a reputation as a chaser extraordinaire.
+        
+        His aggressive yet elegant batting style, coupled with his unwavering determination, made him a nightmare for bowlers worldwide. He redefined chase sequences, turning seemingly impossible targets into mere formalities. Remember the 183 against Pakistan in the 2011 World Cup? Or the 138 against Australia at the MCG in 2012? These weren't just knocks; they were masterclasses in composure and grit.</p>
+    <div style="font-size: 20px;">
+        <button onclick="toggle_2()"><img id ="like_2" src="https://www.airwatergas.com.au/images/design/like.svg" alt="Like" height="25px" width="25px" style="float:left"></button>
+        <span id="likes_count_2">0</span> Likes
+    </div>
+    <script>
+        var liked_2 = false;
+        var likes_2 = document.getElementById('likes_count_2');
+        var count_likes_2 = parseInt(localStorage.getItem('likes_count_2')) || 0;
+        function toggle_2() {
+            if(liked_2 == false) {
+                var change = document.getElementById('like_2');
+                change.src = 'https://th.bing.com/th/id/R.9cc0657bf1ea80ac864254260832620f?rik=fg33bVOzQrveEQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdi7%2fLqy%2fdi7Lqyn9T.png&ehk=ll6sbNKJn2iNfdpHwudtSUIcdghGGg08nKsmi6ANAKI%3d&risl=&pid=ImgRaw&r=0';
+                change.alt = 'Liked';
+                liked_2 = true;
+                count_likes_2++;
+            } else {
+                var change = document.getElementById('like_2');
+                change.src = 'https://www.airwatergas.com.au/images/design/like.svg';
+                change.alt = 'Like';
+                liked_2 = false;
+                count_likes_2--;
+            }
+            localStorage.setItem('likes_count_2', count_likes_2.toString());
+            likes_2.textContent = count_likes_2;
+        }
+        likes_2.textContent = count_likes_2;
+    </script>
+    <div class="comments">
+        <p style="font-size: 20px;">Comments:</p>
+        <ul>
+            <li type="square" style="font-size: 20px;">Comment 1</li>
+            <li type="square" style="font-size: 20px;">Comment 2</li>
+        </ul>
+    </div>
+</body>
+</html>

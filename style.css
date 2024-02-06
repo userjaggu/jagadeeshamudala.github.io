@@ -1,0 +1,304 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0; 
+    background-color: #f8f8f8;
+    color: #333;
+                                        
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    
+}
+nav{
+    color:green;
+
+}
+#toggleButton {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-size: 10px; 
+    padding: 5px; 
+    border-color: aqua;
+    background-color: red;
+}
+
+#about{
+    margin-bottom: 5%;
+}
+
+nav {
+    background-color:aqua;
+    padding: 30px;
+    size: 0cqi;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+
+
+
+@keyframes colorChangeText {
+    0% {
+        color: #3498db; 
+    }
+    50% {
+        color: #e74c3c; 
+    }
+    100% {
+        color: #3498db; 
+    }
+}
+
+#image p:hover {
+    animation: colorChangeText 2s infinite; 
+}
+
+a {
+    text-decoration:none;
+
+    font-weight: bolder;
+}
+
+section {
+    padding: 20px;
+}
+
+
+
+.age {
+    border-radius: 30%;
+}
+
+.ge {
+    border-radius: 30%;
+}
+.e {
+    border-radius: 30%;
+}
+#education {
+    text-align: center;
+    border:3px solid black ;
+}
+#education:hover {
+    box-shadow: 5px 5px 5px 5px black;
+}
+#achievements {
+    text-align: center;
+    border:3px solid black ;
+}
+#achievements:hover {
+    box-shadow: 5px 5px 5px 5px black;
+}
+#skills {
+    text-align: center;
+    border:3px solid black ;
+}
+#skills:hover {
+    box-shadow: 5px 5px 5px 5px black;
+}
+#blog {
+    text-align: center;
+    border:3px solid black ;
+}
+#blog:hover {
+    box-shadow: 5px 5px 5px 5px black;
+}
+#contact {
+    text-align: center;
+    border:3px solid black ;
+}
+#contact:hover {
+    box-shadow: 5px 5px 5px 5px black;
+}
+marquee{
+    font-size: 350%;
+    font-style:italic;
+   animation:  colorChangeText 2s infinite;
+}
+
+
+
+#education,
+#achievements,
+#skills,
+#blog,
+#contact
+ {
+    transition: transform 0.5s ease; 
+}
+
+#education:hover,
+#achievements:hover,
+#skills:hover,
+#blog:hover,
+#contact:hover
+{
+    transform: scale(1.05); 
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+
+
+
+#education,
+#skills,
+#achievements,
+#blog,
+#contact
+{
+    text-align: center;
+    border: 3px solid black;
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+
+#education h1,
+#skills h1,
+#achievements h1,
+#blog h1,
+#contact h1
+{
+    margin :0%;
+}
+
+#education ul,
+#skills h1,
+#achievements h1,
+#blog h1,
+#contact h1
+ {
+    padding: 0%;
+}
+
+#education li ,
+#skills h1,
+#achievements h1,
+#blog h1,
+#contact h1
+{
+    margin-bottom: 10px; 
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    #toggleButton {
+        top: 10px;
+        right: 10px;
+    }
+
+    #about{
+        margin-bottom: 10%;
+    }
+
+    #about .about-image {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #education,
+    #achievements,
+    #skills,
+    #blog,
+    #contact {
+        padding: 10px;
+    }
+
+    #blog-list {
+        flex-direction: column;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+
+    #blog-form button {
+        width: 100%;
+    }
+}
+
+
+#about .about-image {
+    max-width: 300px;
+    height: 200px;
+    float: right;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-bottom: 30%;
+    transition: transform 0.5s ease; 
+}
+
+
+#about .about-image {
+    max-width: 300px;
+    height: 200px;
+    float: right;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-bottom: 30%;
+    transition: transform 0.5s ease; 
+}
+
+.about-image {
+    max-width: 300px;
+    height: 200px;
+    float: right;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-bottom: 30%;
+    transition: transform 0.5s ease; 
+    animation: rotateImageHorizontal 5s infinite linear; 
+}
+
+@keyframes rotateImageHorizontal {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.about-image {
+    animation: rotateImageHorizontal 2s infinite linear;
+}
+
+
+.about-image.paused {
+    animation-play-state: paused;
+}
+h1 {
+    text-align: center;
+}
+
+
